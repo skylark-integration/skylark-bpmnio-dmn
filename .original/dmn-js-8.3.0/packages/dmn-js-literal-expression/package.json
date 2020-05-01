@@ -1,0 +1,36 @@
+{
+  "name": "dmn-js-literal-expression",
+  "description": "A literal expression view for dmn-js",
+  "version": "8.3.0",
+  "scripts": {
+    "test": "karma start",
+    "build": "del-cli lib && babel -s -q -d lib src",
+    "dev": "npm test -- --no-single-run --auto-watch",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmn-io/dmn-js",
+    "directory": "packages/dmn-js-literal-expression"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "dmn",
+    "dmn-js",
+    "dmn-js-view",
+    "literal expression"
+  ],
+  "devDependencies": {
+    "dmn-font": "^0.4.1",
+    "inferno-test-utils": "~5.0.5"
+  },
+  "dependencies": {
+    "diagram-js": "^6.6.1",
+    "dmn-js-shared": "^8.3.0",
+    "escape-html": "^1.0.3",
+    "inferno": "~5.0.5",
+    "min-dash": "^3.0.0",
+    "min-dom": "^3.1.1"
+  }
+}

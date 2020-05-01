@@ -1,0 +1,34 @@
+{
+  "name": "dmn-js-drd",
+  "description": "A decision requirements diagram view for dmn-js",
+  "version": "8.3.0",
+  "scripts": {
+    "test": "karma start",
+    "build": "del-cli lib && babel -s -q -d lib src",
+    "dev": "npm test -- --no-single-run --auto-watch",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmn-io/dmn-js",
+    "directory": "packages/dmn-js-drd"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "dmn",
+    "dmn-js",
+    "dmn-js-view",
+    "drd"
+  ],
+  "dependencies": {
+    "diagram-js": "^6.6.1",
+    "diagram-js-direct-editing": "^1.6.1",
+    "dmn-js-shared": "^8.3.0",
+    "inherits": "^2.0.1",
+    "min-dash": "^3.0.0",
+    "min-dom": "^3.1.1",
+    "object-refs": "^0.3.0",
+    "tiny-svg": "^2.2.1"
+  }
+}
